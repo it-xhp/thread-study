@@ -15,12 +15,12 @@
 
     <!-- 自定义logger -->
     <logger name="com.xhp" level="DEBUG" additivity="false">
-        <appender-ref ref="STDOUT" />
+        <appender-ref ref="STDOUT"/>
     </logger>
 
     <!-- 设置日志输出级别 -->
     <root level="ERROR">
-        <appender-ref ref="STDOUT" />
+        <appender-ref ref="STDOUT"/>
     </root>
 
 

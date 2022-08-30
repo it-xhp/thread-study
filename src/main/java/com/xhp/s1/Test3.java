@@ -24,16 +24,17 @@ public class Test3 {
         });
         Thread t = new Thread(task);
         t.start();
-        log.debug("{}",task.get());
+        log.debug("{}", task.get());
 
 
         Callable<Integer> task2 = new Test4();
         FutureTask<Integer> futureTask = new FutureTask<Integer>(task2);
         Thread thread = new Thread(futureTask);
         thread.start();
-        log.debug("{}",futureTask.get());
+        log.debug("{}", futureTask.get());
     }
 }
+
 @Slf4j
 class Test4 implements Callable<Integer> {
 
